@@ -1,0 +1,26 @@
+// prettier-ignore
+{
+  // "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": ["./src/*"],
+      "@images": ["./assets/images/*"],
+      "@icons": ["./assets/icons/*"],
+      "@store": ["./src/store"],
+      "@utils": ["./src/utils"],
+      "@screens/*": ["./src/screens/*"],
+      "@types/*": ["./src/types/*"],
+      "@components": ["./src/components"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
+}
